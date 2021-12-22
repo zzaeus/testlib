@@ -15,6 +15,7 @@ task sourceJar(type: Jar) {
 // ./gradlew --warning-mode=all publishDeployPublicationToGithubPackagesRepository
 
     publishing {
+        /*
         repositories {
             maven {
                 name = 'GithubPackages'
@@ -29,7 +30,7 @@ task sourceJar(type: Jar) {
                 url = "file://${buildDir}/repo"
             }
         }
-
+*/
         publications {
             deploy(MavenPublication) {
                // buildType = variant.buildType.name // sets the current build type
